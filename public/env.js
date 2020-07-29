@@ -14,9 +14,9 @@ $(document).ready(function(){
             //alert("Load was performed.");
         })
     })
-    $('btnSum').click(function(){
-        let num1 = $('num1').val();
-        let num2 = $('num2').val();
+    $('#btnSum').click(function(){
+        let num1 = $('#num1').val();
+        let num2 = $('#num2').val();
         console.log(num1);
         console.log(num2);
         let data = {
@@ -24,7 +24,7 @@ $(document).ready(function(){
         }
         $.get('/calc', data, function(result){
             console.log(result);
-            $('#result').val(result.result);
+            $('#result').val(result);
         })
 
     })

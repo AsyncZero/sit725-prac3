@@ -10,7 +10,7 @@ app.use(Express.static('public'))
 
 app.get('/weather',(req,res)=>{
     let weatherArray = ["Cloudy", "Sunny", "Rain", "Showers"];
-    let randomNum = getRandom(3);
+    let randomNum = getRandom(4);
     res.send(weatherArray[randomNum]);
 })
 
