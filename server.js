@@ -14,7 +14,7 @@ app.get('/weather',(req,res)=>{
     res.send(weatherArray[randomNum]);
 })
 
-app.get('/test',(req,res)=> {
+app.get('/test',(req,res)=>{
     console.log('Test Endpoint Hit');
     res.send('Test API Working');
 })
